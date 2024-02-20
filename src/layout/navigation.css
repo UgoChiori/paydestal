@@ -105,12 +105,19 @@ padding: 0 55px; */
     border-radius: 80px;
     background: #1B442A;
     color: #FFF;
-
+     cursor: pointer;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 
+}
+
+.reg-button:hover {
+    border: none;
+    background: #F4B23E;
+    color: #1B442A;
+    
 }
 
 .reg-button a {
