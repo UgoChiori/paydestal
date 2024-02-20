@@ -12,15 +12,18 @@ const Company: React.FC = () => {
         services ensuring seamless and secure payment solutions for diverse
         needs
       </p>
-      <button>Get Started</button>
+      <button className="reg-button">Get Started</button>
       </div>
       <div>
         {/* image placeholders */}
         <div>
-          <img src="" alt="placeholder" />
-          <img src="" alt="placeholder" />
-          <img src="" alt="placeholder" />
-          <img src="" alt="placeholder" />
+          <img src="/images/ellipse.svg" alt="placeholder" />
+          <img src="/images/circle1.svg" alt="placeholder" />
+          <img src="/images/ellipse2.svg" alt="placeholder" />
+          <img src="/images/circle2.svg" alt="placeholder" />
+          <img src="/images/circle3.svg" alt="placeholder" />
+          <img src="/images/bigcircle.svg" alt="placeholder" />
+          <img src="/images/ellipse3.svg" alt="placeholder" />
       </div>
     </div>
     </div>

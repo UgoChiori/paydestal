@@ -1,7 +1,11 @@
 .company-wrapper{
     border: 1px solid black;
-    width: 1728px;
-height: 730px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 125px;
+    width: 100%;
+/* height: 730px; */
 flex-shrink: 0;
 background: rgba(255, 255, 255, 0.80);
 backdrop-filter: blur(24px);
@@ -22,4 +26,44 @@ width: 731px;
 margin-top: 148px;
 margin-left:150px ;
 
+}
+
+.heading-one p {
+    color: #202020;
+font-family: "Plus Jakarta Sans";
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+width: 731px;
+margin-top: 20px;
+margin-left:150px ;
+}
+
+.heading-one button {
+    /* width: 200px;
+height: 50px;
+background: #1B442A;
+border-radius: 5px;
+color: #fff;
+font-family: "Plus Jakarta Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 400; */
+display: flex;
+padding: 12px 25px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 80px;
+background: #1B442A;
+color: #FFF;
+ cursor: pointer;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+line-height: normal;
+margin-top: 20px;
+margin-left:150px ;
 }
