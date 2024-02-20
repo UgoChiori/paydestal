@@ -1,0 +1,120 @@
+.navigation-wrapper {
+    border: 1px solid black;
+    width: 100%;
+    height: 105px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* padding: 0 20px; */
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(24px);
+    position: fixed;
+    /* top: 0;
+    left: 0;
+    right: 0; */
+    z-index: 5;
+}
+
+/* width: 100%;
+height: 71px;
+display: flex;
+justify-content: space-between;
+flex-direction: row;
+align-items: center;
+position: fixed;
+z-index: 5;
+background: #fff;
+box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.05);
+margin-bottom: 20px;
+padding: 0 55px; */
+
+.logo {
+
+    width: 243px;
+    height: 75px;
+    flex-shrink: 0;
+    fill: url(/images/logo.svg), lightgray 0px -0.085px / 100% 100.228% no-repeat;
+
+}
+
+.nav-links-container {
+    border: 1px solid green;
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 7px;
+    /* width: 100%; */
+}
+
+.nav-links-container a {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #202020;
+    text-align: center;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.nav-links-container a:hover {
+    color: #F4B23E;
+  
+}
+.get-started {
+    /* border: 1px solid blue; */
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 16px;
+
+}
+
+.login-link {
+    /* border: 1px solid red; */
+    display: flex;
+    padding: 12px 25px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #202020;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.login-link:hover {
+    border: 1px solid #1B442A;
+    border-radius: 80px;
+    /* color: #F4B23E; */
+}
+
+.reg-button {
+    display: flex;
+    padding: 12px 25px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 80px;
+    background: #1B442A;
+    color: #FFF;
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.reg-button a {
+    color: #FFF;
+    text-decoration: none;
+    font-family: "Plus Jakarta Sans";
+}

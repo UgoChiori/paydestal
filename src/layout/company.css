@@ -1,0 +1,25 @@
+.company-wrapper{
+    border: 1px solid black;
+    width: 1728px;
+height: 730px;
+flex-shrink: 0;
+background: rgba(255, 255, 255, 0.80);
+backdrop-filter: blur(24px);
+}
+
+.heading-one{
+    border: 1px solid red;
+}
+
+.heading-one h1 {
+    color: #1B442A;
+font-family: "Plus Jakarta Sans";
+font-size: 70px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+width: 731px;
+margin-top: 148px;
+margin-left:150px ;
+
+}
