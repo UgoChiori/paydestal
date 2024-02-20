@@ -1,5 +1,5 @@
 .navigation-wrapper {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 100%;
     height: 105px;
 
@@ -35,6 +35,7 @@ padding: 0 55px; */
     height: 75px;
     flex-shrink: 0;
     fill: url(/images/logo.svg), lightgray 0px -0.085px / 100% 100.228% no-repeat;
+    cursor: pointer;
 
 }
 
