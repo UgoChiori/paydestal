@@ -13,6 +13,7 @@ const Company: React.FC = () => {
         needs
       </p>
       <button className="reg-button">Get Started</button>
+     
       </div>
       <div>
         {/* image placeholders */}
