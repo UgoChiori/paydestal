@@ -1,6 +1,7 @@
 import React from "react";
-import "./company.css"
-
+import "./company.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
 const Company: React.FC = () => {
   return (
@@ -12,7 +13,9 @@ const Company: React.FC = () => {
         services ensuring seamless and secure payment solutions for diverse
         needs
       </p>
-      <button className="reg-button">Get Started</button>
+      <button className="reg-button">Get Started
+      <FontAwesomeIcon icon={faAngleRight} />
+      </button>
      
       </div>
       <div>
