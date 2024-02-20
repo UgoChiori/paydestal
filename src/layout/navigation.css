@@ -39,7 +39,7 @@ padding: 0 55px; */
 }
 
 .nav-links-container {
-    border: 1px solid green;
+    /* border: 1px solid green; */
     display: inline-flex;
     align-items: flex-start;
     gap: 7px;
