@@ -47,7 +47,7 @@ const Services: React.FC = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % listItems.length);
-    }, 1000); // Adjust the interval as needed
+    }, 1000); // Adjusts the interval as needed
 
     return () => clearInterval(interval);
   }, []);
@@ -58,16 +58,16 @@ const Services: React.FC = () => {
         <img src="/images/dashboard.svg" alt="placeholder" className="dashboard" />
       </div>
 
-      <div className="half-circle">
-        <div className="content">
-          <h3>Our Services</h3>
+      <div className="half-circle" >
+        <div className="content-wrap" >
+           <h3>Our Services</h3>
           <h2>Simple. Transparent. Secure</h2>
           <p>All your business financial needs covered with a full range of our services</p>
           <ul>
             {listItems.map((item, index) => (
               <ListItem key={index} text={item.text} icon={item.icon} isActive={index === currentIndex} />
             ))}
-          </ul>
+          </ul> 
         </div>
       </div>
     </div>
