@@ -50,7 +50,7 @@ const Services: React.FC = () => {
     }, 1000); // Adjusts the interval as needed
 
     return () => clearInterval(interval);
-  }, []);
+  }, [listItems.length]);
 
   return (
     <div className="services">
