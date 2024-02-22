@@ -2,7 +2,7 @@
 
 
     width: 1728px;
-    /* Add max-width for responsiveness */
+    
     border: 1px solid red;
     display: flex;
     flex-direction: column;
@@ -11,6 +11,7 @@
     padding: 96px 0 48px;
     align-self: stretch;
     margin: 128px;
+    background: url(./images/bgimage1.svg) no-repeat;
 
 }
 
@@ -162,6 +163,8 @@ h1 {
     .footer-wrapper {
         padding: 48px 0 24px;
         margin: 0;
+        position: relative; 
+        
     }
 
     .footer-container {
@@ -183,11 +186,12 @@ h1 {
 
 
     .footer-title {
-        border: 1px solid red;
+        
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         gap: 10px;
+        margin-left: 20px;
     }
 
     .footer-links {
@@ -211,4 +215,14 @@ h1{
     .footer-title button {
         width: 200px;
     }
+      /* Adjust position of .footnote */
+      .footnote {
+        position: absolute;
+        bottom: 10px; /* Adjust bottom spacing */
+        left: 50%; /* Center horizontally */
+        transform: translateX(-50%); /* Center horizontally */
+        width: 100%; /* Ensure full width */
+        margin-left: 20px;
+    }
+  
 }
