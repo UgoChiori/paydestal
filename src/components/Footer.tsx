@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
             and your business.
           </p>
           {/* icons */}
-          <img src="images/socialicons.svg" alt="socialicons" className="logo"/>
+          <img src="images/socialicons.svg" alt="socialicons" id="social-icons"/>
         </div>
         <div className="footer-title">
           <Link to="#">Company</Link>

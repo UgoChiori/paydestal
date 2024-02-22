@@ -32,8 +32,8 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
-        margin-right: auto; /* Move away from the edge of the page */
-        margin-left: 70px; /* Add additional margin if needed */
+        margin-right: auto; 
+        margin-left: 70px; 
       }
       
     .explore-right {
@@ -42,7 +42,7 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
-        /* margin-right: 70px; */
+    
     }
     
     .explore-right h1 {
@@ -58,7 +58,7 @@
     
     .explore-right p {
         width: 780px;
-        /* height: 79px; */
+    
         color: #000;
         font-family: "Plus Jakarta Sans";
         font-size: 20px;
@@ -92,4 +92,45 @@
         color: #1B442A;
         transition: all 0.3s ease;
     }
+}
+
+
+@media screen and (max-width: 768px) {
+    .explore-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; /* Center content horizontally */
+        padding: 24px; /* Adjusted padding for mobile screens */
+        margin-top: 64px; /* Adjusted margin top for mobile screens */
+    }
+
+    .explore-left,
+    .explore-right {
+        width: calc(100% - 48px); /* Adjusted width for mobile screens */
+        height: auto; /* Adjusted height for mobile screens */
+    }
+
+    .explore-left img {
+        display: none; /* Hides the image on mobile screens */
+    }
+
+    .explore-right {
+        margin-left: 0; /* Remove left margin for mobile screens */
+    }
+
+    .explore-right h1 {
+        width: 100%; /* Adjusted width for mobile screens */
+        font-size: 24px; /* Adjusted font size for mobile screens */
+        line-height: 32px; /* Adjusted line height for mobile screens */
+        text-align: center; /* Center-align text on mobile screens */
+    }
+
+    .explore-right p {
+        width: 100%; /* Adjusted width for mobile screens */
+        font-size: 16px; /* Adjusted font size for mobile screens */
+        line-height: 24px; /* Adjusted line height for mobile screens */
+        text-align: center; /* Center-align text on mobile screens */
+    }
+
 }

@@ -1,5 +1,6 @@
 import LandingPage from "./LandingPage";
-import NavigationBar from "./layout/Navigation";
+import Footer from "./components/Footer";
+import NavigationBar from "./components/Navigation";
 
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
     <div>
         <NavigationBar />
      <LandingPage />
+     <Footer />
     </div>
   )
 }

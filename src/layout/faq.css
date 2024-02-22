@@ -1,4 +1,4 @@
-@media screen and (max-width: 1440px) {
+/* @media screen and (max-width: 1440px) {
     .faq-wrapper {
         display: flex;
         flex-direction: column;
@@ -20,7 +20,7 @@ margin-bottom: 10px;
 }
 
 .faq-wrapper h1{
-    /* width: 609px; */
+
     color: #1B442A;
 text-align: center;
 font-family: "Plus Jakarta Sans";
@@ -43,13 +43,13 @@ width: 836px;
 }
 
 .faq-rows{
-  /* border: 1px solid black; */
+
   margin-top: 50px;
   width: 836px;
 }
     .faq-rows h2 {
         width: 836px;
-        position: relative; /* Set position to relative */
+        position: relative; 
         padding-right: 20px;
         flex-shrink: 0;
         border-radius: 10.975px;
@@ -94,4 +94,156 @@ width: 836px;
         
     }
 
+}
+
+
+
+
+@media (max-width: 768px) {
+    .faq-wrapper {
+        padding: 48px 0 24px;
+        margin: 0 24px;
+    }
+
+    .faq-wrapper h1 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .faq-wrapper p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .faq-rows h2 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .faq-rows p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+} */
+
+@media screen and (max-width: 1440px) {
+    .faq-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 64px;
+        padding: 96px 0 48px;
+        align-self: stretch;
+        margin: 128px;
+    }
+
+    .faq-wrapper h3 {
+        color: #202020;
+        text-align: center;
+        font-family: "Plus Jakarta Sans";
+        font-size: 21.004px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-bottom: 10px;
+    }
+
+    .faq-wrapper h1 {
+        color: #1B442A;
+        text-align: center;
+        font-family: "Plus Jakarta Sans";
+        font-size: 44px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        margin-bottom: 20px;
+    }
+
+    .faq-wrapper p {
+        color: #202020;
+        text-align: center;
+        font-family: "Plus Jakarta Sans";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        width: 90%; /* Adjusted width for mobile screens */
+    }
+
+    .faq-rows {
+        margin-top: 50px;
+        width: 90%; /* Adjusted width for mobile screens */
+    }
+
+    .faq-rows h2 {
+        width: 90%; /* Adjusted width for mobile screens */
+        position: relative;
+        padding-right: 20px;
+        flex-shrink: 0;
+        border-radius: 10.975px;
+        border: 1px solid #FFFFFF;
+        filter: drop-shadow(0px 4px 6.6px rgba(0, 0, 0, 0.25));
+        color: #202020;
+        font-family: "Plus Jakarta Sans";
+        font-size: 21px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 45px;
+        margin-bottom: 25px;
+        cursor: pointer;
+        padding: 0 25px;
+    }
+
+    .faq-rows h2::after {
+        content: "+";
+        position: absolute;
+        top: 0;
+        right: 10px;
+    }
+
+    .faq-rows h2.active::after {
+        content: "-";
+    }
+
+    .faq-rows p {
+        width: 90%; /* Adjusted width for mobile screens */
+        height: 56px;
+        padding: 0 25px;
+        color: #202020;
+        font-family: "Plus Jakarta Sans";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 45px;
+        margin-bottom: 25px;
+        cursor: pointer;
+    }
+}
+
+/* Mobile screens */
+@media (max-width: 768px) {
+    .faq-wrapper {
+        padding: 48px 0 24px;
+        margin: 0 24px;
+    }
+
+    .faq-wrapper h1 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .faq-wrapper p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .faq-rows h2 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .faq-rows p {
+        font-size: 14px;
+        line-height: 20px;
+    }
 }
