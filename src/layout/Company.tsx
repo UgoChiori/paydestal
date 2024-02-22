@@ -19,13 +19,8 @@ const Company: React.FC = () => {
         </button>
       </div>
       <div className="heading-two">
-        <img src="/images/ellipse.svg" alt="placeholder" />
-        <img src="/images/circle1.svg" alt="placeholder" />
-        <img src="/images/ellipse2.svg" alt="placeholder" />
-        <img src="/images/circle2.svg" alt="placeholder" />
-        <img src="/images/circle3.svg" alt="placeholder" />
-        <img src="/images/bigcircle.svg" alt="placeholder" />
-        <img src="/images/ellipse3.svg" alt="placeholder" />
+        <img src="images/group.svg" alt="group icons" />
+     
       </div>
     </div>
   );

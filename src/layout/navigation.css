@@ -3,6 +3,7 @@ nav {
     width: 100%;
     padding: 0 4%;
     display: flex;
+  
     justify-content: space-between;
     align-items: center;
     background: rgba(255, 255, 255, 0.80);
@@ -121,4 +122,37 @@ nav .nav-left {
     color: #FFF;
     text-decoration: none;
     font-family: "Plus Jakarta Sans";
+}
+
+@media screen and (max-width: 1440px) {
+    nav {
+        gap: 50px;
+        padding: 0 4%;
+        padding: 0 120px; /* Adjust the padding to set the space on both ends */
+        /* box-sizing: border-box; */
+    }
+     nav .nav-left{
+        gap: 57px;
+    }
+    .logo {
+        width: 243px;
+        height: 75px;
+    }
+    .nav-links-container {
+        gap: 7px;
+    }
+    .nav-links-container a {
+        font-size: 16px;
+    }
+    .get-started {
+        gap: 16px;
+    }
+    .login-link {
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+    .reg-button {
+        padding: 12px 25px;
+        font-size: 14px;
+    }
 }

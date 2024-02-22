@@ -5,9 +5,9 @@
     align-items: center;
     margin-top: 125px;
     width: 100%;
-    height: 730px;
+    height: 633px;
     flex-shrink: 0;
-    background: rgba(255, 255, 255, 0.80);
+    background: url(./images/bgimage1.svg) no-repeat;
     backdrop-filter: blur(24px);
 }
 

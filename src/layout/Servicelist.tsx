@@ -15,11 +15,11 @@ const Servicelist: React.FC = () => {
 with Paydestal
         </p>
         <ul>
-          <li>Effortless electronic payments </li>
-          <li>Swiftly move funds between accounts</li>
-          <li>Simplify your payments with USSD service</li>
-          <li>Cross-border settlement service</li>
-          <li>Transactions to external accounts or beneficiaries</li>
+          <li><img src="images/greentick.svg" alt="green tick" /> Effortless electronic payments </li>
+          <li><img src="images/greentick.svg" alt="green tick" />Swiftly move funds between accounts</li>
+          <li><img src="images/greentick.svg" alt="green tick" />Simplify your payments with USSD service</li>
+          <li><img src="images/greentick.svg" alt="green tick" />Cross-border settlement service</li>
+          <li><img src="images/greentick.svg" alt="green tick" />Transactions to external accounts or beneficiaries</li>
         </ul>
       </div>
       <div>

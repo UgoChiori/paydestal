@@ -15,7 +15,9 @@ const ExploreApi:React.FC = () => {
         <h1>
         Create tailored payment solutions using our thoroughly documented APIs
         </h1>
-        <p>The in-depth and clear documentation of our APIs, enables you to create, from simple projects to intricate financial products catering to lots of customers. Got any ideas? it's time to create.</p>
+        <p>The in-depth and clear documentation of our APIs,  enables you to create,
+from simple projects to intricate financial products catering to lots of customers. 
+Got any ideas, it's time create.</p>
         <button>Explore Our API
         <FontAwesomeIcon icon={faAngleRight} />
         </button>

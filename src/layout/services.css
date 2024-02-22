@@ -105,21 +105,30 @@
 
 @keyframes colorAnimation {
     0% {
-       color: #fff; 
+        color: #fff;
     }
+
     50% {
-        color: #F4B23E; 
+        color: #F4B23E;
     }
+
     100% {
-      color: white;
+        color: white;
     }
 }
 
 .content li.active {
-    animation: colorAnimation 2s infinite; /* Adjust the animation duration */
-  }
+    animation: colorAnimation 2s infinite;
+    /* Adjust the animation duration */
+}
 
 @media screen and (max-width: 1440px) {
+    .services {
+        height: 100%;
+        gap: 156px;
+
+    }
+
     .dashboard {
         width: 85%;
     }
@@ -127,4 +136,18 @@
     .graph {
         width: 45%;
     }
+
+    .half-circle {
+        width: 800px;
+        /* height: 600px; */
+    }
+
+    .content h2 {
+        font-size: 36px;
+    }
+
+    .content p {
+        font-size: 18px;
+    }
+    
 }
