@@ -1,50 +1,54 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
+import "./footer.css";
+import { Link } from "react-router-dom";
 
 const Footer: React.FC = () => {
   return (
-    <div style={{border:"1px solid red"}}>
-      <div>
-        {/* insert logo */}
-        <img src="" alt="placeholder" />
-        <p>
-          A modern, technology payment processing and settlement built for you
-          and your business.
-        </p>
-        {/* icons */}
-        <div>
-          <img src="" alt="placeholder" />
-          <img src="" alt="placeholder" />
-          <img src="" alt="placeholder" />
+    <div className="footer-wrapper">
+      <div className="footer-container">
+        <div className="footer-logo">
+          {/* insert logo */}
+          <img src="images/logo.svg" alt="logo" />
+          <p>
+            A modern, technology payment processing and settlement built for you
+            and your business.
+          </p>
+          {/* icons */}
+          <img src="images/socialicons.svg" alt="socialicons" className="logo"/>
         </div>
-        <div>
-          <h2>Company</h2>
-          <ul>
-            <li>Company</li>
-            <li>Services</li>
-            <li>Developers</li>
-            <li>Careers</li>
-            <li>Partners</li>
-          </ul>
+        <div className="footer-title">
+          <Link to="#">Company</Link>
+          <div className="footer-links">
+            <p>About Us</p>
+            <p>Why Paydestal</p>
+            <p>Awards</p>
+            <p>Careers</p>
+          </div>
         </div>
-        <div>
-          <h2>Help</h2>
-          <ul>
-            <li>FAQ</li>
-            <li>Terms & conditions</li>
-            <li>Documentation</li>
-            <li>Support Policy</li>
-            <li>Privacy</li>
-          </ul>
+        <div className="footer-title">
+          <Link to="#">Useful Links</Link>
+          <div className="footer-links">
+            <p>Services</p>
+            <p>Contact Us</p>
+            <p>Developer</p>
+            <p>FAQ</p>
           </div>
-          <div>
-            <h1>Get in Touch </h1>
-            <input type="text" placeholder="Email" />
-            <button>Subscribe Now</button>
-          </div>
-          <div>
-            <p>© Payevery Limited. 2024 All rights reserved</p>
-          </div>
+        </div>
+        <div className="footer-title">
+          <h1>Newsletter </h1>
+          <input type="text"  />
+          <button>
+            Subscribe Now
+            <FontAwesomeIcon icon={faAngleRight} />
+          </button>
+        </div>
+        
       </div>
+      <div>
+          <p className="footnote">© Payevery Limited. 2024 All rights reserved</p>
+        </div>
     </div>
   );
 };

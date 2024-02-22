@@ -1,31 +1,33 @@
-import React from 'react'
+import React from "react";
+import "./servicelist.css";
 
-
-
-const Servicelist:React.FC = () => {
+const Servicelist: React.FC = () => {
   return (
-    <div style={{border:"1px solid purple"}}>
-        <div>
-            <p>Our Services</p>
-            <h1>Discover Possibilities
-with Paydestal</h1>
-<p>All your business financial needs covered with a full range of our services
-
-</p>
-<ul>
-<li>Seamless electronic payments</li>
-<li>Swiftly move funds between accounts</li>
-<li>Simplify your payments with USSD service</li>
-<li>Cross-border settlement service</li>
-<li>Transactions to external accounts or beneficiaries</li>
-</ul>
-        </div>
-        <div>
-            {/* circle image */}
-            <img src="" alt="placeholder" />
-        </div>
+    <div className="list-wrapper">
+     
+      {/* <img src="images/verifieduser.svg" alt="verified badge" /> */}
+    
+      <div className="list-list">
+      <img src="images/ellipse21.svg" alt="yellow circle" className="yellow-circle" />
+      <h1>Why Choose Us</h1>
+        <p>
+        Discover <span className="yellow">Endless Possibilities </span>
+with Paydestal
+        </p>
+        <ul>
+          <li>Effortless electronic payments </li>
+          <li>Swiftly move funds between accounts</li>
+          <li>Simplify your payments with USSD service</li>
+          <li>Cross-border settlement service</li>
+          <li>Transactions to external accounts or beneficiaries</li>
+        </ul>
+      </div>
+      <div>
+        {/* circle image */}
+        <img src="images/circ4.svg" alt="phone icon" className="phone-icon"/>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Servicelist
+export default Servicelist;

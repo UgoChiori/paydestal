@@ -1,0 +1,139 @@
+.footer-wrapper {
+
+
+    width: 1728px;
+    /* Add max-width for responsiveness */
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+    padding: 96px 0 48px;
+    align-self: stretch;
+    margin: 128px;
+
+}
+
+
+.footer-container {
+    border: 1px solid black;
+    width: 100%;
+    /* height: auto; */
+    /* Adjust height based on content */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 100px;
+}
+
+.footer-logo {
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.footer-logo p {
+    width: 436px;
+    height: 52px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #000;
+    font-family: "Plus Jakarta Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer-title a,
+h1 {
+
+    /* border: 1px solid blue; */
+    color: #1B442A;
+    font-family: "Plus Jakarta Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+    margin-top: 16px;
+    width: 137px;
+    height: 197px;
+    flex-shrink: 0;
+}
+
+.footer-links p {
+    color: #202020;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid yellow;
+}
+
+
+.footer-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+
+}
+
+.footer-title input {
+    width: 358px;
+    height: 54px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    border: 1px solid #B8BCCA;
+    background: #FFF;
+    margin-top: 22px;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    color: #202020;
+    padding: 16px 20px;
+    align-items: center;
+
+}
+
+.footer-title button {
+    display: inline-flex;
+    padding: 16px 30px;
+    align-items: center;
+    gap: 11px;
+    border-radius: 100px;
+    background: #1B442A;
+    margin-top: 30px;
+    color: #FFF;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 215px;
+    height: 60px;
+    border: none;
+    cursor: pointer;
+}
+
+.footer-title button:hover {
+    background: #F4B23E;
+    color: #1B442A;
+    transition: 0.5s ease-in-out;
+}

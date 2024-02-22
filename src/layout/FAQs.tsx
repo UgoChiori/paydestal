@@ -1,49 +1,39 @@
-import React from 'react'
+import React, {useState} from 'react';
+import "./faq.css";
 
 
 
 const FAQs:React.FC = () => {
+    const [activeIndex, setActiveIndex] = useState<number | null>(null);
+    const toggleVisibility = (index: number) => {
+        setActiveIndex(activeIndex === index ? null : index);
+    };
+  
   return (
-    <div style={{border: "1px solid red"}}>
+    <div className="faq-wrapper">
         <div>
-            <h1>FAQs</h1>
-            <div>
-            <h2>What is Paydestal?</h2>
-            <p>
-                Paydestal is a payment gateway that allows businesses to accept
-                payments from customers. We provide a simple, secure and reliable
-                way for businesses to collect payments from their customers.
-            </p>
-            <h2>How does Paydestal work?</h2>
-            <p>
-                Paydestal provides businesses with a unique link that they can share
-                with their customers. When a customer clicks on the link, they are
-                taken to a secure payment page where they can enter their payment
-                details and complete the transaction.
-            </p>
-            <h2>What payment methods does Paydestal support?</h2>
-            <p>
-                Paydestal supports a wide range of payment methods, including card
-                payments, USSD payments, and bank transfers. We are constantly
-                adding new payment methods to make it as easy as possible for
-                businesses to collect payments from their customers.
-            </p>
-            <h2>How much does Paydestal cost?</h2>
-            <p>
-                Paydestal is free to use for businesses. We charge a small fee for
-                each transaction, which is deducted from the amount paid by the
-                customer. There are no setup fees or monthly fees, so you only pay
-                for the transactions you process.
-            </p>
-            <h2>How do I get started with Paydestal?</h2>
-            <p>
-                Getting started with Paydestal is easy. Simply sign up for an
-                account on our website, and you will be able to start accepting
-                payments from your customers right away. If you have any questions or
-                need help getting set up, our support team is always available to
-                assist you.
-            </p>
-            </div>
+            <h3>If you have a question, we have an answer</h3>
+            <h1>Frequently Asked Questions</h1>
+            <p>Get answers to all questions you have and boost your knowledge on our services.</p>
+            <div className="faq-rows">
+      <h2 onClick={() => toggleVisibility(0)}>What is paydestal?</h2>
+      {activeIndex === 0 && <p>We are a dedicated payment processing company, based in Nigeria.</p>}
+      
+      <h2 onClick={() => toggleVisibility(1)}>Is it possible to integrate plugin ?</h2>
+      {activeIndex === 1 && <p>Yes, here is how you can get started</p>}
+      
+      <h2 onClick={() => toggleVisibility(2)}>What services do you offer?</h2>
+      {activeIndex === 2 && <p>Here is a list of our services</p>}
+      
+      <h2 onClick={() => toggleVisibility(3)}>Do you offer banking services?</h2>
+      {activeIndex === 3 && <p>Not at the moment, but we have that in the pipeline. Stay tuned!</p>}
+      
+      <h2 onClick={() => toggleVisibility(4)}>What do I need to get started?</h2>
+      {activeIndex === 4 && <p>Here is a list of our services</p>}
+      
+      <h2 onClick={() => toggleVisibility(5)}>Where is Paydestal located?</h2>
+      {activeIndex === 5 && <p>Our Head office is located at 6 Alhaji Bakinson Street, Ikeja, Lagos Nigeria.</p>}
+    </div>
         </div>
     </div>
   )

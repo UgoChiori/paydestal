@@ -1,85 +1,175 @@
-.company-wrapper{
-    border: 1px solid black;
+.company-wrapper {
+    /* border: 1px solid black; */
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
     margin-top: 125px;
     width: 100%;
-/* height: 730px; */
-flex-shrink: 0;
-background: rgba(255, 255, 255, 0.80);
-backdrop-filter: blur(24px);
+    height: 730px;
+    flex-shrink: 0;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(24px);
 }
 
-.heading-one{
-    border: 1px solid red;
-}
+.heading-one {
+    /* border: 1px solid red; */
+    height: 100%;
+    width: 51%;
+    padding-left: 150px;
+    padding-top: 148px;
 
+}
 .heading-one h1 {
     color: #1B442A;
-font-family: "Plus Jakarta Sans";
-font-size: 70px;
-font-style: normal;
-font-weight: 800;
-line-height: normal;
-width: 731px;
-margin-top: 148px;
-margin-left:150px ;
+    font-family: "Plus Jakarta Sans";
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    width: 731px;
+
 
 }
+.heading-two {
+    position: relative;
+    width: 41%;
+    /* border: 1px solid blue; */
+    height: 78%;
+}
+
+.heading-two img:nth-child(1) {
+    position: absolute;
+    width: 10%;
+    height: 11%;
+    border-radius: 50%;
+    /* border: 1px solid red; */
+    top: 25%;
+    left: 0.8%;
+}
+
+.heading-two img:nth-child(2) {
+    position: absolute;
+    width: 32%;
+    height: 33%;
+    border-radius: 50%;
+    /* border: 1px solid red; */
+    top: 0;
+    left: 18%;
+}
+
+.heading-two img:nth-child(3) {
+    position: absolute;
+    width: 3.5%;
+    height: 3.6%;
+    border-radius: 50%;
+    top: 4%;
+    left: 60%;
+}
+
+.heading-two img:nth-child(4) {
+    position: absolute;
+    width: 43%;
+    height: 44%;
+    border-radius: 50%;
+    top: 13%;
+    left: 53%;
+}
+
+.heading-two img:nth-child(5) {
+    position: absolute;
+    width: 25%;
+    height: 25%;
+    border-radius: 50%;
+    top: 68%;
+    left: 68%;
+}
+
+.heading-two img:nth-child(6) {
+    position: absolute;
+    width: 58%;
+    height: 60%;
+    border-radius: 50%;
+    top: 38%;
+    left: 0.6%;
+}
+
+.heading-two img:nth-child(7) {
+    position: absolute;
+    width: 5.9%;
+    height: 6%;
+    border-radius: 50%;
+    top: 62%;
+    left: 94%;
+}
+
+
+
 
 .heading-one p {
     color: #202020;
-font-family: "Plus Jakarta Sans";
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-width: 731px;
-margin-top: 20px;
-margin-left:150px ;
+    font-family: "Plus Jakarta Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 731px;
+    margin-top: 20px;
+    padding: 10px;
+
 }
 
 .heading-one button {
-    /* width: 200px;
-height: 50px;
+width: 189px;
+height: 60px;
 background: #1B442A;
-border-radius: 5px;
-color: #fff;
-font-family: "Plus Jakarta Sans";
-font-size: 16px;
-font-style: normal;
-font-weight: 400; */
-/* display: flex;
-padding: 12px 25px;
-justify-content: center;
-align-items: center;
-gap: 10px;
-border-radius: 80px;
-background: #1B442A;
-color: #FFF;
- cursor: pointer;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-line-height: normal;
-margin-top: 20px;
-margin-left:150px ; */
 display: inline-flex;
 padding: 16px 30px;
 align-items: center;
 gap: 11px;
-margin-top: 20px;
-margin-left:150px ;
 border-radius: 1000px;
-background: #1B442A;
-width: 189px;
-height: 60px;
 color: #FFF;
 font-family: "Plus Jakarta Sans";
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
+margin-top: 50px;
+
+    
+}
+
+
+.yellow {
+    color: #F4B23E;
+}
+
+
+
+@media screen and (max-width: 1440px) {
+    .heading-one {
+        padding-left: 40px;
+
+    }
+
+    .heading-one h1 {
+        color: #1B442A;
+        font-family: "Plus Jakarta Sans";
+        font-size: 60px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        width: 600px;
+    }
+    .heading-one p {
+        color: #202020;
+        font-family: "Plus Jakarta Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        width: 600px;
+        margin-top: 20px;
+    }
+
 }

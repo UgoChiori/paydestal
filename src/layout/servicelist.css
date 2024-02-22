@@ -1,0 +1,61 @@
+.list-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 125px;
+    width: 100%;
+    height: 730px;
+    flex-shrink: 0;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(24px);
+}
+
+.phone-icon {
+    width: 400px;
+    height: 400px;
+    flex-shrink: 0;
+}
+
+.list-list h1 {
+
+    width: 158px;
+    height: 26px;
+    color: #202020;
+    font-family: "Plus Jakarta Sans";
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.list-list p {
+    width: 637px;
+    height: 110px;
+    color: #1B442A;
+    font-family: "Plus Jakarta Sans";
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.list-list ul {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 27px;
+    margin-top: 47px;
+
+}
+
+.list-list ul li {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+
+}
+
