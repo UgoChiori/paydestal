@@ -14,14 +14,12 @@
     height: 500px;
     box-shadow: 0px -18px 40px 0px rgba(0, 0, 0, 0.10);
     border-radius: 0 50% 50% 0;
-
+   
 
 }
 
 .dashboard {
-
-
-    height: 70%;
+ height: 70%;
 }
 
 .half-circle {
@@ -33,14 +31,26 @@
     position: relative;
     overflow: hidden;
     padding-left: 177px;
+  
 
 }
 
+.graph, 
+.half-circle {
+    transition: all 0.5s ease-in-out;
+    transform: translateX(-12%);
+}
+
+.graph{
+    transform: translateX(0, 10%);
+
+}
+
+.half-circle {
+    transform: translateX(0, -10%);
+}
 .content {
-    /* position: absolute; */
-    /* top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
+   
     color: white;
     text-align: center;
     /* padding: 20px; */
@@ -105,6 +115,10 @@
     /* animation: colorAnimation 3s infinite alternate; */
 }
 
+
+
+
+  
 @keyframes colorAnimation {
     0% {
         color: #fff;
@@ -191,6 +205,8 @@
         height: 400px;
         border-radius: 50px;
         box-shadow: 0px -18px 40px 0px rgba(0, 0, 0, 0.10);
+      
+
     }
 
     .half-circle {
