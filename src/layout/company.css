@@ -178,7 +178,7 @@
         font-style: normal;
         font-weight: 700;
         line-height: normal;
-        width: 500px;
+        width: 400px;
         /* width: 731px; */
 }
 
@@ -189,13 +189,13 @@
         font-style: normal;
         font-weight: 400;
         line-height: normal;
-        width: 500px;
+        width: 400px;
         /* margin-top: 20px; */
         /* border: 1px solid black; */
     }
 .heading-one button{
     /* move button to left  side*/
-    margin-right: 300px;
+    margin-right: 200px;
     margin-top: 20px;
   
 }

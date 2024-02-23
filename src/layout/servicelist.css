@@ -86,20 +86,22 @@
 }
 @keyframes changeColor {
     0% {
-      color: #000; /* Start with black color */
+        color: #000;
     }
+
     50% {
-      color: #F4B23E; 
+        color: #F4B23E;
     }
+
     100% {
-      color: #000; /* Change back to black at 100% */
+        color: #000;
     }
   }
   
-  /* .list-list ul li{
-    animation: changeColor 5s infinite; 
+  .animate-yellow {
+    animation: changeColor 5s infinite ;
   }
-   */
+  
 
 /* Mobile screens */
 @media screen and (max-width: 768px) {
