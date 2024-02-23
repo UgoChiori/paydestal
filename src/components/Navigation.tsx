@@ -10,6 +10,11 @@ const NavigationBar: React.FC = () => {
     setIsMenuOpen(!isMenuOpen);
   }
 
+  // close menu when link is clicked
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  }
+
 
   return (
     <nav>
@@ -20,7 +25,9 @@ const NavigationBar: React.FC = () => {
         <div className={`nav-links-container ${isMenuOpen ? "open" : ""}`}>
           {navLinks.map((link: { name: string, route: string }, index: number): ReactNode => {
             return (
-              <Link key={index} to={link.route}>{link.name}</Link>
+              <Link key={index} to={link.route} onClick={closeMenu}>
+              {link.name}
+            </Link>
             )
           })}
         </div>

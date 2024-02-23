@@ -9,23 +9,23 @@
         gap: 50px;
         margin-top: 103px;
         margin-left: 100px;
-      
+
     }
 
     .explore-left {
         width: 100%;
-     
+
         display: flex;
         flex-direction: column;
-        
-    
+
+
     }
 
     .explore-left img {
         width: 516px;
         height: 436px;
-       
-      
+
+
 
 
     }
@@ -53,7 +53,7 @@
 
     .explore-right p {
         width: 770px;
-         color: #000;
+        color: #000;
         font-family: "Plus Jakarta Sans";
         font-size: 20px;
         font-style: normal;
@@ -94,10 +94,12 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        /* Center content vertically */
+
         padding: 24px;
-        /* Adjusted padding for mobile screens */
+        width: 90%;
+
         margin-top: 64px;
+        margin-left: 28px;
         /* Adjusted margin top for mobile screens */
     }
 
@@ -116,29 +118,48 @@
 
     .explore-right {
         margin-left: 0;
-        /* Remove left margin for mobile screens */
+     
     }
 
     .explore-right h1 {
         width: 100%;
-        /* Adjusted width for mobile screens */
+
         font-size: 24px;
-        /* Adjusted font size for mobile screens */
-        line-height: 32px;
-        /* Adjusted line height for mobile screens */
+
         text-align: center;
-        /* Center-align text on mobile screens */
+        margin-top: 30px;
+
     }
 
     .explore-right p {
         width: 100%;
-        /* Adjusted width for mobile screens */
+
+
         font-size: 16px;
-        /* Adjusted font size for mobile screens */
+
         line-height: 24px;
-        /* Adjusted line height for mobile screens */
+
         text-align: center;
-        /* Center-align text on mobile screens */
+
+    }
+    .explore-right button {
+        display: inline-flex;
+        padding: 16px 30px;
+        align-items: center;
+        gap: 11px;
+        border-radius: 100px;
+        background: #1B442A;
+        color: #FFF;
+        font-family: "Plus Jakarta Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-top: 10px;
+        margin-left: 55px;       
+        cursor: pointer;
+        border: none;
+
     }
 
 

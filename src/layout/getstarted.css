@@ -4,7 +4,7 @@
         background: #1B442A;
         box-shadow: 0px 16px 29.8px 3px rgba(0, 0, 0, 0.25);
         width: 70%; /* Adjusted width to 80% of the viewport width */
-      
+    
         height: 390px;
         flex-shrink: 0;
         position: absolute;
@@ -26,40 +26,41 @@
     }
 
     .getstarted-container h1 {
-        color: #FFFFFF;
-        font-family: "Plus Jakarta Sans";
-        font-size: 44px;
-        font-style: normal;
-        font-weight: 800;
-        line-height: normal;
+        color: #FFF;
+font-family: "Plus Jakarta Sans";
+font-size: 44px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
     }
 
     .getstarted-container p {
         color: #FFF;
         text-align: center;
         font-family: "Plus Jakarta Sans";
-        font-size: 24px;
+        font-size: 22px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
     }
 
     .getstarted-container button {
-        display: inline-flex;
-        padding: 16px 30px;
-        align-items: center;
+        display: flex;
+        width: 275px;
+        padding: 16px 55px;
         justify-content: center;
+        align-items: center;
         gap: 10px;
         border-radius: 100px;
-        background: #F4B23E;
-        border: none;
-        color: #1B442A;
-        font-family: "Plus Jakarta Sans";
-        font-size: 21px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
+background: #F4B23E;
+color: #1B442A;
+transition: all 0.3s ease;
     }
+  .getstarted-container button:hover {
+    background: #FFF;
+    color: #1B442A;
+  }
+       
 }
 
 /* Mobile screens */

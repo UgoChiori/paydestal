@@ -247,8 +247,8 @@ nav .nav-left {
 
    
     .nav-links-container.open a {
-        display: block; /* Show each navigation link */
-        padding: 10px; /* Add padding to the navigation links */
+        display: block; 
+        padding: 10px;
       
         width: 100%;
         text-align: left;
