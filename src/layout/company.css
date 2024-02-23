@@ -144,40 +144,43 @@
    
 }
 
-/* Mobile screens... only display h1, p and button */
+/* Mobile screens... only display h1, p and button properly aligned to the center */
+
 
 @media screen and (max-width: 768px) {
     .company-wrapper {
         height: 600px;
-        margin-top: 100px;
-        padding: 0 120px; 
-  box-sizing: border-box;
-  display: flex;
-    flex-direction: column;
-    align-items: center;
+        margin-right: 150px;
+        width: 100%;
+        /* padding: 0 120px;  */
+  /* box-sizing: border-box; */
         /* gap: 20px; */
     }
 
-    .heading-one {
-        padding-left: 40px;
-        /* border: 1px solid red; */
-        margin-right: 20px;
-        margin-bottom: 178px;
-        
-
-    }
+   
+.heading-one{
+    padding-left: 40px;
+    /* border: 1px solid red; */
+    margin-right: 20px;
+    margin-bottom: 178px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
     .heading-one h1 {
         color: #1B442A;
         font-family: "Plus Jakarta Sans";
-        font-size: 60px;
+        font-size: 55px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
-        width: 600px;
-        text-align: center;
+        width: 500px;
         /* width: 731px; */
-    }
+}
 
     .heading-one p {
         color: #202020;
@@ -186,12 +189,19 @@
         font-style: normal;
         font-weight: 400;
         line-height: normal;
-        width: 600px;
-        margin-top: 20px;
+        width: 500px;
+        /* margin-top: 20px; */
         /* border: 1px solid black; */
     }
+.heading-one button{
+    /* move button to left  side*/
+    margin-right: 300px;
+    margin-top: 20px;
+  
+}
+.heading-two{
+    display: none;
+}
+   
 
-    .heading-two {
-        display: none;
-    }
 }

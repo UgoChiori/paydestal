@@ -7,15 +7,15 @@ import { Link } from "react-router-dom";
 const Footer: React.FC = () => {
   return (
     <div className="footer-wrapper">
-      <div className="footer-container">
+        <div className="footer-container">
         <div className="footer-logo">
-          {/* insert logo */}
+         
           <img src="images/logo.svg" alt="logo" />
           <p>
             A modern, technology payment processing and settlement built for you
             and your business.
           </p>
-          {/* icons */}
+
           <img src="images/socialicons.svg" alt="socialicons" id="social-icons"/>
         </div>
         <div className="footer-title">
@@ -36,19 +36,23 @@ const Footer: React.FC = () => {
             <p>FAQ</p>
           </div>
         </div>
-        <div className="footer-title">
-          <h1>Newsletter </h1>
+        <div className="footer-title" >
+          <Link to="#">Newsletter </Link>
+          <div className="footer-links">
           <input type="text"  />
+         
           <button>
             Subscribe Now
             <FontAwesomeIcon icon={faAngleRight} />
           </button>
+          </div>
         </div>
         
       </div>
-      <div>
-          <p className="footnote">© Payevery Limited. 2024 All rights reserved</p>
-        </div>
+  
+      <div className="copyright">
+          <p>© Payevery Limited. 2024 All rights reserved</p>
+        </div> 
     </div>
   );
 };

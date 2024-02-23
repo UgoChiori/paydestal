@@ -1,34 +1,4 @@
-// import React from "react";
-// import "./services.css"
 
-// const Services: React.FC = () => {
-//   return (
-//     <div className="services">
-//       <div className="graph">
-//         <img src="/images/dashboard.svg" alt="placeholder" className="dashboard"/>
-//       </div>
-      
-//       <div className="half-circle">
-//     <div className="content">
-//         <h3>Our Services</h3>
-//         <h2>Simple. Transparent. Secure</h2>
-//         <p>All your business financial needs covered with a full range of our services</p>
-//         <ul>
-//         <li><img src="images/paymenticon1.svg" alt="Pay-in Collections"/> Pay-in Collections</li>
-//          <li> <img src="images/paymenticon2.svg" alt="International remittance"/> International Remittance</li>
-//           <li> <img src="images/paymenticon3.svg" alt="payout transfers"/> Pay-Out Transfers</li>
-//             <li><img src="images/paymenticon4.svg" alt="ussd payments"/> USSD Payments</li>
-//             <li><img src="images/paymenticon5.svg" alt="bank transfer payments"/>Bank Transfer Payments</li>
-//             <li><img src="images/paymenticon6.svg" alt="card processing"/>Card Processing</li>
-//         </ul>
-//     </div>
-// </div>
-
-//     </div>
-//   );
-// };
-
-// export default Services;
 
 import React, { useState, useEffect } from "react";
 import "./services.css";
