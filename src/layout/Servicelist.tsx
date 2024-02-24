@@ -49,7 +49,7 @@ const ServiceListItem: React.FC<ServiceListItemProps> = ({ text }) => {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setAnimationClass("animate-yellow");
-    }, Math.random() * 5000); // Change 5000 to adjust the maximum interval
+    }, Math.random() * 5000); // Randomize the animation start time
 
     return () => clearTimeout(timeout);
   }, []);

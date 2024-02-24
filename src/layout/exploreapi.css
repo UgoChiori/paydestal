@@ -90,75 +90,73 @@
 
 @media screen and (max-width: 768px) {
     .explore-wrapper {
+      
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
 
         padding: 24px;
-        width: 90%;
-
-        margin-top: 64px;
-        margin-left: 28px;
-        /* Adjusted margin top for mobile screens */
+        width: 430px;
+      margin-top: 64px;
+        margin-left: 30px;
+ 
     }
 
-    .explore-left,
-    .explore-right {
-        width: 100%;
-        /* Adjusted width for mobile screens */
-        height: auto;
-        /* Adjusted height for mobile screens */
-    }
+ 
+  
 
     .explore-left img {
         display: none;
+
         /* Hides the image on mobile screens */
     }
 
     .explore-right {
-        margin-left: 0;
+        margin-right: 125px;
+      
+        width: 100%;
+        text-align: left;
      
     }
 
     .explore-right h1 {
-        width: 100%;
-
+        color: #1B442A;
+        font-family: "Plus Jakarta Sans";
         font-size: 24px;
-
-        text-align: center;
-        margin-top: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        width: 376px;
+        height: 148px;
 
     }
 
     .explore-right p {
-        width: 100%;
-
-
-        font-size: 16px;
-
-        line-height: 24px;
-
-        text-align: center;
-
-    }
-    .explore-right button {
-        display: inline-flex;
-        padding: 16px 30px;
-        align-items: center;
-        gap: 11px;
-        border-radius: 100px;
-        background: #1B442A;
-        color: #FFF;
+        width: 376px;
+        color: #000;
         font-family: "Plus Jakarta Sans";
         font-size: 16px;
         font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        margin-top: 10px;
-        margin-left: 55px;       
-        cursor: pointer;
-        border: none;
+        font-weight: 350;
+        line-height: 24px;
+
+     
+
+    }
+
+    .explore-right-right{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 130px;
+       
+    }
+
+
+    .explore-right button {
+      margin-top: 30px;
+        
 
     }
 

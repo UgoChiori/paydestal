@@ -200,10 +200,30 @@ margin-top: 47px;
 
     }
 }
-/* 
-@keyframes changeColor {
+
+  @keyframes changeColor {
+    0% { /* Start of the animation */
+     
+      color: #000; /* Initial text color */
+    }
+    50% { /* End of the animation */
+     
+      color: #F4B23E /* Final text color */
+    }
+    100% { /* End of the animation */
+     
+      color: #000; /* Final text color */
+    }
+  }
+  .animate-yellow {
+    animation: changeColor 4s infinite;
+  }
+  
+  
+/* @keyframes changeColor {
     0% {
         color: #000;
+        border: 1px solid red;
     }
 
     50% {
@@ -213,12 +233,13 @@ margin-top: 47px;
     100% {
         color: #000;
     }
-} */
-
-.animate-yellow {
-    animation: changeColor 5s infinite;
 }
 
+
+.animate-yellow{
+    animation: changeColor 4s infinite;
+
+} */
 
 /* Mobile screens */
 @media screen and (max-width: 768px) {
