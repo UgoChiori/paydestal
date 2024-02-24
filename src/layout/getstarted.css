@@ -1,111 +1,119 @@
-@media screen and (max-width: 1440px){
-    .getstarted-wrapper {
-        border-radius: 20px; /* Reduced border-radius for a more subtle effect */
-        background: #1B442A;
-        box-shadow: 0px 16px 29.8px 3px rgba(0, 0, 0, 0.25);
-        width: 70%; /* Adjusted width to 80% of the viewport width */
-        height: 390px;
-        flex-shrink: 0;
-        position: absolute;
-        bottom: 463px;
-        left: 50%;
-        margin-left: -35%;
-        z-index: 10;
+.getstarted-wrapper {
+    border-radius: 20px;
+    /* Reduced border-radius for a more subtle effect */
+    background: #1B442A;
+    box-shadow: 0px 16px 29.8px 3px rgba(0, 0, 0, 0.25);
+    width: 70%;
+    /* Adjusted width to 80% of the viewport width */
+    height: 390px;
+    flex-shrink: 0;
+    position: absolute;
+    bottom: 463px;
+    left: 50%;
+    margin-left: -35%;
+    z-index: 10;
 
-    }
+}
 
-    .getstarted-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-        width: 100%;
-        height: 100%;
-    }
+.getstarted-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+}
 
-    .getstarted-container h1 {
-        color: #FFF;
-font-family: "Plus Jakarta Sans";
-font-size: 44px;
-font-style: normal;
-font-weight: 800;
-line-height: normal;
-    }
+.getstarted-container h1 {
+    color: #FFF;
+    font-family: "Plus Jakarta Sans";
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
 
-    .getstarted-container p {
-        color: #FFF;
-        text-align: center;
-        font-family: "Plus Jakarta Sans";
-        font-size: 22px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-    }
+.getstarted-container p {
+    color: #FFF;
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
 
-    .getstarted-container button {
-        display: flex;
-        width: 275px;
-        padding: 16px 55px;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        border-radius: 100px;
-background: #F4B23E;
-color: #1B442A;
-transition: all 0.3s ease;
-    }
-  .getstarted-container button:hover {
+.getstarted-container button {
+    display: flex;
+    width: 275px;
+    padding: 16px 55px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 100px;
+    background: #F4B23E;
+    color: #1B442A;
+    transition: all 0.3s ease;
+}
+
+.getstarted-container button:hover {
     background: #FFF;
     color: #1B442A;
-  }
-       
 }
+
+
 
 /* Mobile screens */
 
 @media (max-width: 768px) {
     .getstarted-wrapper {
-        width: 95%;
+        /* width: 95%; */
+        width: 382px;
+        height: 392px;
+        border-radius: 30px;
         margin: 0 10px;
         margin-bottom: 70px;
         display: flex;
         justify-content: center;
-        /* Center horizontally */
+        /* z-index for mobile */
+        z-index: 10;
+        position: relative;
+        bottom: 0;
+        left: 0;
+        right: 0;
         align-items: center;
-        /* Center vertically */
-        border-radius: 30px;
-        
-  
-
+        box-shadow: 0px 16px 29.8px 3px rgba(0, 0, 0, 0.25);
     }
 
-    .getstarted-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-        width: 100%;
-    }
+ 
 
 
     .getstarted-container h1 {
-        font-size: 30px;
+     
+        font-size: 44px;
+        font-weight: 800;
         text-align: center;
 
     }
 
     .getstarted-container p {
-        font-size: 18px;
-        width: 280px;
-        ;
+        font-size: 16px;
+        width: 301px;
+        text-align: center;
     }
 
     .getstarted-container button {
-        font-size: 18px;
-        padding: 10px 20px;
-        width: 200px;
-        height:50px;
+        display: inline-flex;
+        padding: 16px 55px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        color: #1B442A;
+        font-family: "Plus Jakarta Sans";
+        font-size: 21px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
     }
 }

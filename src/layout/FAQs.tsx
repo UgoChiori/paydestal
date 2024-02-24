@@ -36,7 +36,8 @@ const FAQs: React.FC = () => {
           <h2 className={activeIndex === 2 ? "active" : ""} onClick={() => toggleVisibility(2)}>
             What services do you offer?
             {activeIndex === 2 && (
-            <p>Here is a list of our <a href="#">services</a></p>
+            <p>Here is a list of our<a style={{color:"#1B442A"}} href="#">services</a></p>
+
           )}
           </h2>
          
@@ -52,7 +53,7 @@ const FAQs: React.FC = () => {
           <h2 className={activeIndex === 4 ? "active" : ""} onClick={() => toggleVisibility(4)}>
             What do I need to get started?
             {activeIndex === 4 && (
-            <p>Here is a list of our services</p>
+            <p>Here is a list of our <a href="#" style={{color:"#1B442A"}}>services</a></p>
           )}
           </h2>
          

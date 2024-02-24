@@ -85,13 +85,19 @@
 
 
 @media screen and (max-width: 1440px) {
-    /* .company-wrapper {
-        height: 600px;
-        margin-top: 100px;
-        padding: 0 120px; 
-  box-sizing: border-box;
-     
-    } */
+    .company-wrapper {
+       
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 25px;
+        width: 100%;
+        height: 730px;
+        flex-shrink: 0;
+        background: rgba(255, 255, 255, 0.80);
+        backdrop-filter: blur(24px);
+    }
 
     .heading-one {
         padding-left: 40px;
@@ -117,7 +123,7 @@
         font-family: "Plus Jakarta Sans";
         font-size: 16px;
         font-style: normal;
-        font-weight: 400;
+        font-weight: 200;
         line-height: normal;
         width: 600px;
         margin-top: 20px;
@@ -152,6 +158,8 @@
       align-items: center;
       margin-top: 100px;
       height: auto;
+      background: #FFF;
+      
     }
   
     .heading-one {
@@ -191,8 +199,8 @@
         align-items: center;
         gap: 11px;
         width: 175px;
-        height: 56px;
-        margin-top: 40px;
+        height: 45px;
+        margin-bottom: 60px;
     }
   
     .heading-two {

@@ -10,7 +10,7 @@ const Getstarted:React.FC = () => {
         <div className='getstarted-container'> 
             <h1>Ready to get started?</h1>
             <p>It only takes a few minutes to register your free account.</p>
-            <button>Explore Our API
+            <button>Get Started
                 <FontAwesomeIcon icon={faAngleRight} />
             </button>
         </div>
