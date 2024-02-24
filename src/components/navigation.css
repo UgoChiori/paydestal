@@ -1,27 +1,27 @@
 nav {
-    /* border: 1px solid black; */
+  
     width: 100%;
-    padding: 0 4%;
+   
+    padding: 0 100px;
     display: flex;
 
     justify-content: space-between;
     align-items: center;
     background: rgba(255, 255, 255, 0.80);
     height: 105px;
-    /* backdrop-filter: blur(24px); */
-    position: sticky;
+    backdrop-filter: blur(24px);
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 100;
 }
 
-nav .nav-left {
+.nav-left {
     display: flex;
+    flex-direction: row;
+    gap: 57px;
     align-items: center;
-    /* justify-content: space-between; */
-    gap: 20px;
 }
-
 
 
 
@@ -36,24 +36,26 @@ nav .nav-left {
 }
 
 .nav-links-container {
-    /* border: 1px solid green; */
-    display: inline-flex;
-    align-items: flex-start;
-    gap: 7px;
-    /* width: 100%; */
+   
+    
+   display: flex; 
+    gap: 46px;
+   
+  
+ 
 }
 
 .nav-links-container a {
-
+  
     display: flex;
-    padding: 10px;
+  
     justify-content: center;
     align-items: center;
     gap: 10px;
     text-decoration: none;
     color: #202020;
     text-align: center;
-    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-family: 'Plus Jakarta Sans';
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -133,16 +135,30 @@ nav .nav-left {
 
 
 @media screen and (max-width: 1440px) {
-    nav {
-        gap: 50px;
-        padding: 0 4%;
-        padding: 0 120px;
-        /* Adjust the padding to set the space on both ends */
-        /* box-sizing: border-box; */
-    }
 
-    nav .nav-left {
-        gap: 57px;
+    nav {
+      
+        width: 100%;
+   
+        padding: 0 40px;
+        display: flex;
+    
+        justify-content: space-between;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.80);
+        height: 105px;
+        backdrop-filter: blur(24px);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+    }
+    .nav-left {
+     
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+         
     }
 
     .logo {
@@ -151,15 +167,20 @@ nav .nav-left {
     }
 
     .nav-links-container {
-        gap: 7px;
+       
+        gap: 46px;
     }
 
     .nav-links-container a {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .get-started {
         gap: 16px;
+        display: inline-flex;
+        align-items: flex-start;
+      
+      
     }
 
     .login-link {

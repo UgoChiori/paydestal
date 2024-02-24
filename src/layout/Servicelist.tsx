@@ -19,17 +19,21 @@ const ServiceDetails: React.FC = () => {
         <img src="images/verifieduser.svg" alt="yellow circle" />
       </div>
 
-      <h1>Why Choose Us</h1>
-      <p>
+
+<h1 >Why Choose Us</h1>
+      <p >
         Discover <span className="yellow">Endless Possibilities </span> with
         Paydestal
       </p>
+
       <ul>
+       
         <ServiceListItem text="Effortless electronic payments" />
         <ServiceListItem text="Swiftly move funds between accounts" />
         <ServiceListItem text="Simplify your payments with USSD service" />
         <ServiceListItem text="Cross-border settlement service" />
         <ServiceListItem text="Transactions to external accounts or beneficiaries" />
+
       </ul>
     </div>
   );
@@ -52,7 +56,7 @@ const ServiceListItem: React.FC<ServiceListItemProps> = ({ text }) => {
 
   return (
     <li className={animationClass}>
-      <img src="images/greentick.svg" alt="green tick" />
+      <img src="images/greentick.svg" alt="green tick" className="green-circle"/>
       {text}
     </li>
   );
