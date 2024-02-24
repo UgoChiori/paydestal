@@ -21,6 +21,7 @@ const Footer: React.FC = () => {
             id="social-icons"
           />
         </div>
+        <div className="footer-links-one">
         <div className="footer-title">
           <Link to="#">Company</Link>
           <div className="footer-links">
@@ -39,6 +40,7 @@ const Footer: React.FC = () => {
             <p>FAQ</p>
           </div>
         </div>
+        </div>
         <div className="footer-title">
           <Link to="#">Newsletter </Link>
           <div className="footer-links">
@@ -53,7 +55,7 @@ const Footer: React.FC = () => {
       </div>
 
       <div className="copyright">
-        <p>© Payevery Limited. 2024 All rights reserved</p>
+        <p>© Copyright 2024. All rights reserved.</p>
       </div>
     </div>
   );
