@@ -21,7 +21,7 @@ function App() {
  
 
   return (
-    <div style={{ position: "relative" }}>
+    <div id="main" style={{ position: "relative" }}>
       {loading && (
         <div style={{
           position: "fixed",
