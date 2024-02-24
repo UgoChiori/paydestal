@@ -23,9 +23,8 @@ body {
 }
 
 .app {
-    /* border: 5px solid red; */
-    /* width: 100%; */
+
     height: fit-content;
     position: relative;
-    /* min-height: 20px; */
+
 }
