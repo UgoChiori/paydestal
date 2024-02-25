@@ -264,7 +264,7 @@ margin-top: -15px;
         padding: 50px 0px;
         align-items: center;
         gap: 50px;
-        border: 1px solid black;
+        /* border: 1px solid black; */
        
   }
    .footer-links p{

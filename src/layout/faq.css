@@ -109,7 +109,7 @@
         padding: 48px 0 24px;
         margin: 0 auto;
         width: 100%;
-        border: 1px solid red;
+        /* border: 1px solid red; */
         margin-top: -70px;
         display: flex;
     }
@@ -122,10 +122,10 @@
         font-style: normal;
         font-weight: 800;
         line-height: normal;
-        border: 1px solid yellowgreen;
+        /* border: 1px solid yellowgreen; */
     }
 .faq-wrapper h3{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     color: #202020;
 text-align: center;
 font-family: "Plus Jakarta Sans";
