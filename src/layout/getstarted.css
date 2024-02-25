@@ -68,8 +68,8 @@
 
 @media (max-width: 768px) {
     .getstarted-wrapper {
-        /* width: 95%; */
-        width: 382px;
+        width: 95%;
+        /* width: 382px; */
         height: 392px;
         border-radius: 30px;
         margin: 0 10px;
@@ -87,7 +87,17 @@
     }
 
  
-
+.getstarted-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+    margin: 0;
+}
 
     .getstarted-container h1 {
      

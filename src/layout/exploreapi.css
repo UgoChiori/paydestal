@@ -13,8 +13,8 @@
     }
 
     .explore-left {
-        width: 100%;
-
+        /* width: 900px; */
+       height: 350px;
         display: flex;
         flex-direction: column;
 
@@ -22,7 +22,7 @@
     }
 
     .explore-left img {
-        width: 516px;
+        /* width: 516px; */
         height: 436px;
 
 
@@ -86,7 +86,87 @@
         color: #1B442A;
         transition: all 0.3s ease;
     }
+    @media screen and (max-width: 1440px){
+        .explore-wrapper {
+            display: flex;
+            width: 100%;
+            padding: 0 120px;
+            box-sizing: border-box;
+            justify-content: space-between;
+            align-items: center;
+            gap: 50px;
+            margin-top: 103px;
+            margin-left: 100px;
+    
+        }
 
+    
+        .explore-left img {
+           height: 400px;
+    width: 700px;
+    margin-right: 50px;
+    margin-top: -45px;
+    
+    
+        }
+    
+        .explore-right {
+            width: 100%;
+            height: 430px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-right: auto;
+            margin-left: 70px;
+        }
+    
+        .explore-right h1 {
+            width: 662px;
+            height: 165px;
+            color: #1B442A;
+            font-family: "Plus Jakarta Sans";
+            font-size: 44px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+        }
+    
+        .explore-right p {
+            width: 770px;
+            color: #000;
+            font-family: "Plus Jakarta Sans";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    
+        .explore-right button {
+            display: inline-flex;
+            padding: 16px 30px;
+            align-items: center;
+            gap: 11px;
+            border-radius: 1000px;
+            background: #1B442A;
+            color: #FFF;
+            font-family: "Plus Jakarta Sans";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-top: 50px;
+            width: 218px;
+            cursor: pointer;
+            border: none;
+    
+        }
+    
+        .explore-right button:hover {
+            background: #F4B23E;
+            color: #1B442A;
+            transition: all 0.3s ease;
+        }
+    }
 
 @media screen and (max-width: 768px) {
     .explore-wrapper {
@@ -102,7 +182,9 @@
  
     }
 
- 
+ .explore-left{
+    display: none;
+ }
   
 
     .explore-left img {
