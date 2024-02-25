@@ -1,34 +1,27 @@
-import React, {useEffect, useState} from "react";
+import React, {useEffect} from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import "./footer.css";
 import { Link } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Footer: React.FC = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.pageYOffset;
-      if (scrollTop > 50) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  },[])
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
  
 
   return (
     <div className="footer-wrapper">
-      <div className={`footer-container ${isScrolled ? "scrolled" : ""}`}>
-        <div className="footer-logo">
+      <div className="footer-container">
+        <div className="footer-logo"
+          data-aos="fade-right"
+          data-aos-duration="500"
+        >
           <img src="images/logo.svg" alt="logo" />
           <p>
             A modern, technology payment processing and settlement built for you
@@ -42,7 +35,10 @@ const Footer: React.FC = () => {
           />
         </div>
         <div className="footer-links-one">
-        <div className="footer-title">
+        <div className="footer-title"
+          data-aos="fade-right"
+          data-aos-duration="500"
+        >
           <Link to="#">Company</Link>
           <div className="footer-links">
             <p>About Us</p>
@@ -51,7 +47,10 @@ const Footer: React.FC = () => {
             <p>Careers</p>
           </div>
         </div>
-        <div className="footer-title">
+        <div className="footer-title"
+          data-aos="fade-in-right"
+          data-aos-duration="500"
+        >
           <Link to="#">Useful Links</Link>
           <div className="footer-links">
             <p>Services</p>
@@ -61,7 +60,10 @@ const Footer: React.FC = () => {
           </div>
         </div>
         </div>
-        <div className="footer-title">
+        <div className="footer-title"
+          data-aos="fade-in-right"
+          data-aos-duration="500"
+        >
           <Link to="#">Newsletter </Link>
           <div className="footer-links">
             <input type="text" />

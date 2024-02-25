@@ -1,11 +1,11 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect} from "react";
 import "./services.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Services: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [scrollPosition, setScrollPosition] = useState(0);
-  const graphRef = useRef<HTMLDivElement>(null);
-  const halfCircleRef = useRef<HTMLDivElement>(null);
+  
   const listItems = [
     { text: "Pay-in Collections", icon: "images/paymenticon1.svg" },
     { text: "International Remittance", icon: "images/paymenticon2.svg" },
@@ -15,44 +15,43 @@ const Services: React.FC = () => {
     { text: "Card Processing", icon: "images/paymenticon6.svg" },
   ];
 
-  
   useEffect(() => {
-    const handleScroll = () => {
-      setScrollPosition(window.scrollY);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    AOS.init({
+      duration: 1000,
+    });
   }, []);
+
+  
+ 
   
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % listItems.length);
-    }, 1000); // Adjusts the interval as needed
+    }, 2000); // Adjusts the interval as needed
 
     return () => clearInterval(interval);
   }, [listItems.length]);
 
-  const slideInFromLeft = scrollPosition > 300;
+
 
   return (
     <div className="services">
-      <div
-        className={`graph ${slideInFromLeft ? "slide-in" : ""}`}
-        ref={graphRef}
+      <div className="graph"
+        data-aos="fade-in"
+        data-aos-duration="500"
+        
       >
         <img
           src="/images/dashboard.svg"
           alt="placeholder"
           className="dashboard"
+          data-aos="fade-in"
+          data-aos-duration="500"
         />
       </div>
-
-      <div className={`half-circle ${slideInFromLeft ? "slide-in" : ""}`} ref={halfCircleRef}>
+<div className="half-circle" data-aos="slide-left">
+      {/* <div className={`half-circle ${slideInFromLeft ? "slide-in" : ""}`} ref={halfCircleRef}> */}
         <div className="content-wrap">
           <h3>Our Services</h3>
           <h2>Simple. Transparent. Secure</h2>

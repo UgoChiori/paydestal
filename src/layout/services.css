@@ -33,24 +33,21 @@
     position: relative;
     overflow: hidden;
     padding-left: 177px;
+    
 
 
 }
 
-/* .graph, 
-.half-circle {
-    transition: all 0.5s ease-in-out;
-    transform: translateX(-12%);
+
+.half-circle[data-aos="slide-left"] {
+    opacity: 0;
+    transform: translateX(-100px); /* Start with a translateX of -100px to move it off-screen */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Define transition properties */
 }
-
-.graph{
-    transform: translateX(0, 10%);
-
-}
-
-.half-circle {
-    transform: translateX(0, -10%);
-} */
+.half-circle[data-aos="slide-left"].aos-animate {
+    opacity: 1; /* Transition to full opacity */
+    transform: translateX(0); /* Transition to translateX of 0 to bring it back to its original position */
+  }
 .content {
 
     color: white;
@@ -119,7 +116,22 @@
 }
 
 
-
+/* CSS for fade-in animation */
+@keyframes fadeIn {
+    from {
+      opacity: 0.5;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .dashboard[data-aos="fade-in"],
+  .graph[data-aos="fade-in"]
+   {
+    animation: fadeIn 1s ease;
+  }
+  
 
 
 @keyframes colorAnimation {
@@ -419,3 +431,10 @@
 
     }
 }
+
+
+
+
+
+
+

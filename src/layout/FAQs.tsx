@@ -1,5 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./faq.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const FAQs: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
@@ -7,8 +9,17 @@ const FAQs: React.FC = () => {
     setActiveIndex(activeIndex === index ? null : index);
   };
 
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
   return (
-    <div className="faq-wrapper">
+    <div className="faq-wrapper"
+      data-aos="fade-in"
+      data-aos-duration="500"
+    >
       <div>
         <h3>If you have a question, we have an answer</h3>
         <h1>Frequently Asked Questions</h1>

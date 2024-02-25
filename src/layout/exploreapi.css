@@ -38,8 +38,17 @@
         gap: 20px;
         margin-right: auto;
         margin-left: 70px;
+       
     }
-
+    .explore-right[data-aos="fade-left"] {
+        opacity: 0;
+        transform: translateX(-100px); /* Start with a translateX of -100px to move it off-screen */
+        transition: opacity 0.5s ease, transform 0.5s ease; /* Define transition properties */
+    }
+    .explore-right[data-aos="fade-left"].aos-animate {
+        opacity: 1; /* Transition to full opacity */
+        transform: translateX(0); /* Transition to translateX of 0 to bring it back to its original position */
+      }
     .explore-right h1 {
         width: 662px;
         height: 165px;
@@ -190,7 +199,7 @@
     .explore-left img {
         display: none;
 
-        /* Hides the image on mobile screens */
+       
     }
 
     .explore-right {

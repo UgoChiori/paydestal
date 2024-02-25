@@ -1,15 +1,27 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "./exploreapi.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const ExploreApi: React.FC = () => {
+
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
   return (
     <div className="explore-wrapper">
       <div className="explore-left">
         <img src="/images/rectangle.jpg" alt="rectangle" />
       </div>
-      <div className="explore-right">
+      <div className="explore-right"
+        data-aos="fade-left"
+        data-aos-duration="500"
+      >
         <h1>
           Create tailored payment solutions using our thoroughly documented APIs
         </h1>

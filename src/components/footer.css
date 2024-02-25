@@ -3,7 +3,7 @@
 
     position: relative;
     height: 728px;
-   
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,18 +19,18 @@
 .footer-container {
 
     width: 100%;
-     /* padding: 0 100px; */
+    /* padding: 0 100px; */
     display: flex;
     justify-content: center;
     align-items: flex-end;
     gap: 60px;
     margin-right: 133px;
-   
+
 
 }
 
 .footer-logo {
-   
+    /* border: 1px solid red; */
     display: flex;
     /* width: 100%; */
     flex-direction: column;
@@ -56,7 +56,7 @@
 .footer-title a,
 h1 {
 
- 
+
     color: #1B442A;
     font-family: "Plus Jakarta Sans";
     font-size: 24px;
@@ -72,7 +72,7 @@ h1 {
 }
 
 .footer-links {
-     
+
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -81,6 +81,7 @@ h1 {
     margin-top: 16px;
     width: 137px;
     height: 197px;
+
     /* flex-shrink: 0; */
 }
 
@@ -93,8 +94,9 @@ h1 {
     line-height: normal;
     text-decoration: none;
     cursor: pointer;
-    
+
 }
+
 .footer-links p:hover {
     color: #F4B23E;
     transition: 0.5s ease-in-out;
@@ -104,28 +106,30 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-gap: 16px;
- 
+    gap: 16px;
+    /* border: 1px solid black; */
+
 
 }
-.footer-container.scrolled .footer-links-one,
-.footer-container.scrolled .footer-title,
-.footer-container.scrolled .footer-logo
- {
-  transition: transform 0.3s ease-in-out;
-  transform: translateX(-30);
-  /* opacity: 0; */
+@keyframes fadeRight {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .footer-logo[data-aos="fade-in-right"],
+    .footer-title[data-aos="fade-in-right"]
+  
+   {
+    animation: fadeRight 1s ease;
+  }
 
-}
 
-.footer-links-one,
-.footer-title,
-.footer-logo
- {
-  /* transition: transform 0.3s ease-in-out; */
-  transform: translateX(0);
-  opacity: 1;
-}
+
+
 
 
 .footer-title input {
@@ -135,7 +139,7 @@ gap: 16px;
     border-radius: 100px;
     border: 1px solid #B8BCCA;
     background: #FFF;
-   font-family: "Plus Jakarta Sans";
+    font-family: "Plus Jakarta Sans";
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -175,7 +179,7 @@ gap: 16px;
 }
 
 #social-icons {
-  
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -191,7 +195,7 @@ gap: 16px;
 }
 
 .copyright {
-   
+
     height: 114px;
     display: flex;
     justify-content: center;
@@ -200,13 +204,13 @@ gap: 16px;
 
 
 
-.footer-links-one{
+.footer-links-one {
     display: flex;
     width: 382px;
     /* margin-bottom: -5px; */
     gap: 70px;
-  
-   
+
+
 
 }
 
@@ -224,73 +228,78 @@ gap: 16px;
         background: url(./images/bgimage2.svg) no-repeat;
 
     }
-  
+
     .footer-container {
         flex-direction: column;
-        
+
         align-items: flex-start;
         margin-right: 0;
     }
-  .footer-logo {
-    
-    align-items: flex-start;
+
+    .footer-logo {
+
+        align-items: flex-start;
     }
+
     .footer-logo p {
         width: 382px;
         color: #000;
-font-family: "Plus Jakarta Sans";
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-margin-left: 30px;
-margin-top: -15px;
+        font-family: "Plus Jakarta Sans";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-left: 30px;
+        margin-top: -15px;
     }
+
     #social-icons {
         margin-left: 30px;
         width: 175px;
         cursor: pointer;
     }
+
     .footer-title {
-     
+
         display: flex;
         margin-left: 30px;
         margin-top: -30px;
-        
+
     }
-  .footer-links-one{
+
+    .footer-links-one {
         display: flex;
         width: 382px;
         padding: 50px 0px;
         align-items: center;
         gap: 50px;
         /* border: 1px solid black; */
-       
-  }
-   .footer-links p{
 
-    width: 137px;
-    font-size: 18px;
-    font-weight: 400;
-
-   }
-  
-   .footer-links input{
-    width: 375px;
-    height: 54px;
-  
-    margin-bottom: 20px;
-   }
-  
-    .copyright{
-     color: #202020;
-text-align: center;
-font-family: "Plus Jakarta Sans";
-font-size: 14px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
     }
- 
-  }
-  
+
+    .footer-links p {
+
+        width: 137px;
+        font-size: 18px;
+        font-weight: 400;
+
+    }
+
+    .footer-links input {
+        width: 375px;
+        height: 54px;
+
+        margin-bottom: 20px;
+    }
+
+    .copyright {
+        color: #202020;
+        text-align: center;
+        font-family: "Plus Jakarta Sans";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+}

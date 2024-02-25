@@ -7,7 +7,20 @@
     align-self: stretch;
     margin: 128px;
 }
-
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .faq-wrapper[data-aos="fade-in"]
+   {
+    animation: fadeIn 1s ease;
+  }
+  
 .faq-wrapper h3 {
     color: #202020;
     text-align: center;
