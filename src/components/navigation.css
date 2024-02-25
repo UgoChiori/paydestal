@@ -196,6 +196,8 @@ nav {
 }
 
 /* Mobile screen with hamburger menu */
+
+
 @media screen and (max-width: 768px) {
     nav {
 
@@ -284,6 +286,7 @@ nav {
         padding: 20px;
         border-radius: 10px;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border: 1px solid green;
 
     }
 
@@ -294,11 +297,27 @@ nav {
 
         width: 100%;
         text-align: left;
+        border: 1px solid black;
     }
 
-    .get-started {
-        display: none;
-    }
+/* .get-started to appear in hamburger menu */
+  .desktop-buttons{
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    
+  }
+
+    /* .get-started {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        border: 1px solid red;
+    } */
+  
 
 
 }
