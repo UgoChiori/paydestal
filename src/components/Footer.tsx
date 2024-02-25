@@ -1,13 +1,33 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import "./footer.css";
 import { Link } from "react-router-dom";
 
 const Footer: React.FC = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.pageYOffset;
+      if (scrollTop > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  },[])
+ 
+
   return (
     <div className="footer-wrapper">
-      <div className="footer-container">
+      <div className={`footer-container ${isScrolled ? "scrolled" : ""}`}>
         <div className="footer-logo">
           <img src="images/logo.svg" alt="logo" />
           <p>

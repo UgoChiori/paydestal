@@ -198,19 +198,26 @@ nav {
 @media screen and (max-width: 768px) {
     nav {
 
-        padding: 0 4%;
-        gap: 20px;
-        height: 80px;
+        width: 430px;
+        height: 84px;
+        flex-shrink: 0;
 
 
     }
 
     .nav-left {
         gap: 20px;
+        /* border: 1px solid red; */
+        width: 155px;
+height: 50px;
+margin-left: -24px;
 
     }
 
-    
+    .logo{
+        width: 155px;
+        height: 50px; 
+    }
 
     .nav-links-container {
         display: none;
@@ -228,7 +235,7 @@ nav {
     }
 
     .line {
-    
+     
         width: 100%;
         height: 3px;
         background-color: #000;
@@ -283,3 +290,105 @@ nav {
 }
 
 
+
+
+/* smaller screens */
+
+@media screen and (max-width: 480px) {
+    nav {
+        width: 100%;
+        padding: 0 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.80);
+        height: 84px;
+        backdrop-filter: blur(24px);
+        position: fixed;
+        top: 0;
+        left: 0;
+    
+        z-index: 100;
+    }
+
+    .nav-left {
+        gap: 20px;
+        /* border: 1px solid red; */
+        width: 155px;
+height: 50px;
+margin-left: -24px;
+
+    }
+
+    .logo{
+        width: 155px;
+        height: 50px; 
+    }
+
+    .nav-links-container {
+        display: none;
+    }
+
+    .hamburger {
+         display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 40px;
+        height: 24px;
+        cursor: pointer;
+       
+        
+    }
+
+    .line {
+       /* border: 1px solid red; */
+       width: 20px;
+        height: 2px;
+       flex-shrink: 0;
+        background-color: #000;
+        transition: all 0.3s ease;
+    }
+
+    .open .line:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .open .line:nth-child(2) {
+        opacity: 0;
+    }
+
+    .open .line:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -7px);
+    }
+
+
+
+    .nav-links-container.open {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        background: rgba(244, 240, 240, 0.8);
+        backdrop-filter: blur(24px);
+        z-index: 100;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    }
+
+
+
+    .nav-links-container.open a {
+        display: block; 
+        padding: 10px;
+      
+        width: 100%;
+        text-align: left;
+    }
+
+}
