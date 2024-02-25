@@ -1,106 +1,105 @@
+.faq-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+    padding: 96px 0 48px;
+    align-self: stretch;
+    margin: 128px;
+}
 
-    .faq-wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 64px;
-        padding: 96px 0 48px;
-        align-self: stretch;
-        margin: 128px;
-    }
+.faq-wrapper h3 {
+    color: #202020;
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-size: 21.004px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 10px;
 
-    .faq-wrapper h3 {
-        color: #202020;
-        text-align: center;
-        font-family: "Plus Jakarta Sans";
-        font-size: 21.004px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
-        margin-bottom: 10px;
-        
-    }
+}
 
-    .faq-wrapper h1 {
-        color: #1B442A;
-        text-align: center;
-        font-family: "Plus Jakarta Sans";
-        font-size: 44px;
-        font-style: normal;
-        font-weight: 800;
-        line-height: normal;
-        margin-bottom: 20px;
-    }
+.faq-wrapper h1 {
+    color: #1B442A;
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 20px;
+}
 
-    .faq-wrapper p {
-        color: #202020;
-        text-align: center;
-        font-family: "Plus Jakarta Sans";
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: normal;
-        width: 909px; /* Adjusted width for mobile screens */
-      
-    }
+.faq-wrapper p {
+    color: #202020;
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    width: 909px;
+    /* Adjusted width for mobile screens */
 
-    .faq-rows {
-       
-        margin-top: 50px;
-        width: 100%; /* Adjusted width for mobile screens */
-    }
+}
 
-    .faq-rows h2 {
-        width: 893px;
-        height: fit-content;
-        
-     position: relative; 
+.faq-rows {
 
-        border-radius: 10.975px;
-        /* border: 1px solid #FFFFFF; */
-        filter: drop-shadow(0px 4px 6.6px rgba(0, 0, 0, 0.25));
-        font-family: "Plus Jakarta Sans";
-        font-size: 21px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 45px;
-        margin-bottom: 25px;
-        cursor: pointer;
-        padding: 0 25px;
-        box-shadow: 0px 4px 6.6px 0px rgba(205, 191, 191, 0.25);
-        
+    margin-top: 50px;
+    width: 100%;
+    /* Adjusted width for mobile screens */
+}
 
-    }
+.faq-rows h2 {
+    width: 893px;
+    height: fit-content;
+    position: relative;
+    border-radius: 10.975px;
+    border: 1px solid #FFFFFF;
+    filter: drop-shadow(0px 4px 6.6px rgba(0, 0, 0, 0.25));
+    font-family: "Plus Jakarta Sans";
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 45px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    padding: 0 25px;
+    box-shadow: 0px 4px 6.6px 0px rgba(205, 191, 191, 0.25);
 
-   
-    .faq-rows h2::after {
-        content: "+";
-        position: absolute;
-        top: 0;
-        right: 10px;
-    }
 
-    .faq-rows h2.active::after {
-        content: "-";
-    }
+}
 
-    .faq-rows p {
-        display: inline-flex;
-        padding-top: 10px;
-        align-items: flex-start;
-        text-align: left;
-        gap: 10px;
-        color: #202020;
-        font-family: "Plus Jakarta Sans";
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 28px;
-        cursor: pointer;
-        border-top: 1px solid #EEE;
-       
-      
-    }
+
+.faq-rows h2::after {
+    content: "+";
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+
+.faq-rows h2.active::after {
+    content: "-";
+}
+
+.faq-rows p {
+    display: inline-flex;
+    padding-top: 10px;
+    align-items: flex-start;
+    text-align: left;
+    gap: 10px;
+    color: #202020;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    cursor: pointer;
+    border-top: 1px solid #EEE;
+
+
+}
 
 
 /* Mobile screens */
@@ -115,7 +114,7 @@
     }
 
     .faq-wrapper h1 {
-       color: #1B442A;
+        color: #1B442A;
         text-align: center;
         font-family: "Plus Jakarta Sans";
         font-size: 25px;
@@ -124,18 +123,20 @@
         line-height: normal;
         /* border: 1px solid yellowgreen; */
     }
-.faq-wrapper h3{
-    /* border: 1px solid red; */
-    color: #202020;
-text-align: center;
-font-family: "Plus Jakarta Sans";
-font-size: 14px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-/* text-align: center; */
-/* width: 277px; */
-}
+
+    .faq-wrapper h3 {
+        /* border: 1px solid red; */
+        color: #202020;
+        text-align: center;
+        font-family: "Plus Jakarta Sans";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        /* text-align: center; */
+        /* width: 277px; */
+    }
+
     .faq-wrapper p {
         font-size: 16px;
         line-height: 24px;
@@ -148,32 +149,72 @@ line-height: normal;
     }
 
     .faq-rows h2 {
-        /* font-size: 18px;
-        line-height: 24px; */
-        /* position: relative; */
-        display: flex;
-width: 382px;
-padding: 15px 12px;
-justify-content: space-between;
-align-items: center;
-color: #202020;
-font-family: "Plus Jakarta Sans";
-font-size: 16px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+        width: 100%;
+        height: fit-content;
+        position: relative;
+        border-radius: 10.975px;
+        border: 1px solid #FFFFFF;
+        filter: drop-shadow(0px 4px 6.6px rgba(0, 0, 0, 0.25));
+        font-family: "Plus Jakarta Sans";
+        font-size: 21px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 45px;
+        margin-bottom: 25px;
+        cursor: pointer;
+        padding: 0 25px;
+        padding: 8px 60px;
+        box-shadow: 0px 4px 6.6px 0px rgba(205, 191, 191, 0.25);
+
+        /* display: flex;
+        
+        width: 382px;
+        padding: 15px 12px;
+        justify-content: space-between;
+        align-items: center;
+        color: #202020;
+        font-family: "Plus Jakarta Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal; */
     }
 
-   
+    /* width: 893px;
+    height: fit-content;
+   position: relative;
+   border-radius: 10.975px;
+    border: 1px solid #FFFFFF;
+    filter: drop-shadow(0px 4px 6.6px rgba(0, 0, 0, 0.25));
+    font-family: "Plus Jakarta Sans";
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 45px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    padding: 0 25px;
+    box-shadow: 0px 4px 6.6px 0px rgba(205, 191, 191, 0.25); */
 
-    /* .faq-rows p {
-     
-    } */
+    .faq-rows p {
+        display: flex;
+        padding-top: 10px;
+        align-items: flex-start;
+        text-align: left;
+        gap: 10px;
+        color: #202020;
+        font-family: "Plus Jakarta Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        cursor: pointer;
+        border-top: 1px solid #EEE;
+    }
 
     .faq-rows {
         margin-top: 20px;
     }
 
-    
-}
 
+}

@@ -18,7 +18,7 @@ const FAQs: React.FC = () => {
         </p>
         <div className="faq-rows">
           <h2 className={activeIndex === 0 ? "active" : ""} onClick={() => toggleVisibility(0)}>
-            What is paydestal?
+            What is Paydestal?
             {activeIndex === 0 && (
             <p>We are a dedicated payment processing company, based in Nigeria.</p>
           )}

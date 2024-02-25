@@ -41,11 +41,15 @@ const NavigationBar: React.FC = () => {
           <Link to="/register">Sign Up</Link>
         </button>
       </div>
-      <div className="hamburger" onClick={toggleMenu}>
+    <div className="hamburger-menu-wrapper">
+     <button className="burg-btn">
+     <div className="hamburger" onClick={toggleMenu}>
         <div className={`line ${isMenuOpen ? "open" : ""}`}></div>
         <div className={`line ${isMenuOpen ? "open" : ""}`}></div>
         <div className={`line ${isMenuOpen ? "open" : ""}`}></div>
       </div>
+     </button>
+    </div>
     </nav>
   );
 };
