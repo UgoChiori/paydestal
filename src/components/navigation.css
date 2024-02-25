@@ -300,23 +300,12 @@ nav {
         border: 1px solid black;
     }
 
-/* .get-started to appear in hamburger menu */
-  .desktop-buttons{
-    border: 1px solid red;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    
-  }
 
-    /* .get-started {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        border: 1px solid red;
-    } */
+ 
+
+    .get-started {
+      display: none;
+    }
   
 
 
