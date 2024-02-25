@@ -38,20 +38,18 @@ const Services: React.FC = () => {
   return (
     <div className="services">
       <div className="graph"
-        data-aos="fade-in"
-        data-aos-duration="500"
+        
         
       >
         <img
           src="/images/dashboard.svg"
           alt="placeholder"
           className="dashboard"
-          data-aos="fade-in"
-          data-aos-duration="500"
+         
         />
       </div>
 <div className="half-circle" data-aos="slide-left">
-      {/* <div className={`half-circle ${slideInFromLeft ? "slide-in" : ""}`} ref={halfCircleRef}> */}
+      
         <div className="content-wrap">
           <h3>Our Services</h3>
           <h2>Simple. Transparent. Secure</h2>

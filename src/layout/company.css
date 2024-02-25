@@ -93,10 +93,11 @@
         align-items: center;
         padding-top: 25px;
         width: 100%;
-        height: 730px;
+        height: 700px;
         flex-shrink: 0;
         background: rgba(255, 255, 255, 0.80);
         backdrop-filter: blur(24px);
+        
     }
 
     .heading-one {
@@ -156,9 +157,10 @@
     .company-wrapper {
       flex-direction: column;
       align-items: center;
-      margin-top: 100px;
+      margin-top: 130px;
       height: auto;
       background: #FFF;
+   
       
     }
   
