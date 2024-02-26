@@ -4,19 +4,35 @@ import Services from './layout/Services';
 import Servicelist from './layout/Servicelist';
 import ExploreApi from './layout/ExploreApi';
 import FAQs from './layout/FAQs';
-// import Getstarted from './layout/Getstarted';
+
 
 
 
 const LandingPage:React.FC = () => {
+  // const [slide, setSlide] = useState<boolean>(false);
+
+
+  // useEffect(() => {
+  //   function slideIn() {
+  //     // console.log(window.scrollY)
+  //     if (window.scrollY > 365 && !slide ) {
+        
+  //       setSlide(true);
+  //     } 
+  //   }
+  //   window.addEventListener('scroll', slideIn);
+  //   return () => {
+  //     window.removeEventListener('scroll', slideIn);
+  //   }
+  // }, [] )
   return (
     <div>
-      <Company />
+      <Company  />
       <Services />
       <Servicelist />
       <ExploreApi />
       <FAQs />
-      {/* <Getstarted /> */}
+      
      
       
 

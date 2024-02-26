@@ -3,10 +3,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import "./company.css";
 
-const Company: React.FC = () => {
+
+
+const Company: React.FC  = () => {
   return (
     <div className="company-wrapper">
-      <HeadingOne />
+      <HeadingOne  />
       <HeadingTwo />
     </div>
   );
@@ -15,6 +17,7 @@ const Company: React.FC = () => {
 const HeadingOne: React.FC = () => {
   return (
     <div className="heading-one">
+   
       <h1>
         The future of <span className="yellow">Payment</span> Processing and Settlement
       </h1>
@@ -27,6 +30,7 @@ const HeadingOne: React.FC = () => {
         Get Started
         <FontAwesomeIcon icon={faAngleRight} />
       </button>
+      
     </div>
   );
 };

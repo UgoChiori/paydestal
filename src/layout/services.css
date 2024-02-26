@@ -41,12 +41,12 @@
 
 .half-circle[data-aos="slide-left"] {
     opacity: 0;
-    transform: translateX(-100px); /* Start with a translateX of -100px to move it off-screen */
-    transition: opacity 0.5s ease, transform 0.5s ease; /* Define transition properties */
+    transform: translateX(-100px); 
+    transition: opacity 0.5s ease, transform 0.5s ease; 
 }
 .half-circle[data-aos="slide-left"].aos-animate {
-    opacity: 1; /* Transition to full opacity */
-    transform: translateX(0); /* Transition to translateX of 0 to bring it back to its original position */
+    opacity: 1; 
+    transform: translateX(0); 
   }
 .content {
 
