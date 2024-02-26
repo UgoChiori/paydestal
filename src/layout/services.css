@@ -216,6 +216,7 @@
         flex-direction: column;
         align-items: center;
         width: fit-content;
+        margin: 0 auto;
 
 
     }
@@ -240,13 +241,14 @@
     }
 
     .half-circle {
-        margin-top: auto;
+        /* margin-top: auto; */
         width: fit-content;
         border-radius: 50px;
         padding-left: 0;
+        /* padding-right: 0; */
         border: none;
         border-radius: 0;
-        margin-top: -120px;
+        margin-top: -150px;
     }
 
     .content-wrap {
@@ -322,12 +324,13 @@
 
 /* Media query for Galaxy S21 Ultra */
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 375px) {
     .services {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: fit-content;
+        width:100%;
+        margin: 0 auto;
 
 
     }
@@ -350,7 +353,8 @@
 
     .half-circle {
         margin-top: auto;
-        width: fit-content;
+        /* width: fit-content; */
+        
         border-radius: 50px;
         padding-left: 0;
         border: none;

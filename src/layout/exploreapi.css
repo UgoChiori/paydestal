@@ -256,3 +256,82 @@
 
 
 }
+
+@media screen and (max-width: 375px){
+    .explore-wrapper {
+      
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
+        width: 420px;
+        margin: 0 auto;
+        margin-left: -10px;
+ 
+    }
+
+ .explore-left{
+    display: none;
+ }
+  
+
+    .explore-left img {
+        display: none;
+
+       
+    }
+
+    .explore-right {
+        margin-right: 100px;
+       margin-top: -40px;
+        width: 95%;
+        text-align: left;
+     
+    }
+
+    .explore-right h1 {
+        color: #1B442A;
+        font-family: "Plus Jakarta Sans";
+        font-size: 23px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        width: 376px;
+        height: 148px;
+
+    }
+
+    .explore-right p {
+        width: 376px;
+        color: #000;
+        font-family: "Plus Jakarta Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 350;
+        line-height: 24px;
+
+     
+
+    }
+
+    .explore-right-right{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 130px;
+       
+    }
+
+
+    .explore-right button {
+      margin-top: 30px;
+        display: inline-flex;
+        padding: 14px 30px;
+        width: 218px;
+        height: 50px;
+        
+
+        }
+
+}

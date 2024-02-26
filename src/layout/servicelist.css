@@ -315,3 +315,24 @@ line-height: normal;
         display: none;
     }
 }
+
+@media screen and (max-width: 375px) {
+
+.list-wrapper{
+    /* border: 1px solid red; */
+    width: 100%;
+
+}
+.list-list{
+    /* border: 1px solid black; */
+}
+.list-list p{
+  /* border: 1px solid red; */
+  width: 362px;
+  font-size: 23px;
+}
+
+.list-list ul{
+    /* border: 1px solid black; */
+}
+}
