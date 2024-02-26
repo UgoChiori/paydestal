@@ -1,11 +1,11 @@
-import React, { useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import "./services.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Services: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  
+
   const listItems = [
     { text: "Pay-in Collections", icon: "images/paymenticon1.svg" },
     { text: "International Remittance", icon: "images/paymenticon2.svg" },
@@ -21,10 +21,6 @@ const Services: React.FC = () => {
     });
   }, []);
 
-  
- 
-  
-
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % listItems.length);
@@ -33,23 +29,16 @@ const Services: React.FC = () => {
     return () => clearInterval(interval);
   }, [listItems.length]);
 
-
-
   return (
     <div className="services">
-      <div className="graph"
-        
-        
-      >
+      <div className="graph">
         <img
           src="/images/dashboard.svg"
           alt="placeholder"
           className="dashboard"
-         
         />
       </div>
-<div className="half-circle" data-aos="slide-left">
-      
+      <div className="half-circle" data-aos="slide-left">
         <div className="content-wrap">
           <h3>Our Services</h3>
           <h2>Simple. Transparent. Secure</h2>

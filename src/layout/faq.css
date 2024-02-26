@@ -69,7 +69,7 @@
     height: fit-content;
     position: relative;
     border-radius: 10.975px;
-    border: 1px solid #FFFFFF;
+    /* border: 1px solid #FFFFFF; */
     filter: drop-shadow(0px 4px 6.6px rgba(0, 0, 0, 0.25));
     font-family: "Plus Jakarta Sans";
     font-size: 21px;
@@ -162,8 +162,15 @@
     }
 
     .faq-rows h2 {
-        width: 100%;
-        height: fit-content;
+        /* display: flex; */
+width: 382.272px;
+/* padding: 12px 12px; */
+justify-content: space-between;
+align-items: center;
+height: fit-content;
+
+        /* width: 100%;
+        height: fit-content; */
         position: relative;
         border-radius: 10.975px;
         border: 1px solid #FFFFFF;
@@ -175,8 +182,8 @@
         line-height: 45px;
         margin-bottom: 25px;
         cursor: pointer;
-        padding: 0 25px;
-        padding: 8px 60px;
+        /* padding: 0 25px;
+        padding: 8px 60px; */
         box-shadow: 0px 4px 6.6px 0px rgba(205, 191, 191, 0.25);
 
     

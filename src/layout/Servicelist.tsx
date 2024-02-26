@@ -13,11 +13,7 @@ const Servicelist: React.FC = () => {
   return (
     <div className="list-wrapper">
       <ServiceDetails />
-      <div className="phone-circle" 
-        data-aos="fade-up"
-        data-aos-duration="500"
-        
-      >
+      <div className="phone-circle" data-aos="fade-up" data-aos-duration="500">
         <img src="images/group3.svg" alt="phone icon" className="phone-icon" />
       </div>
     </div>
@@ -26,10 +22,7 @@ const Servicelist: React.FC = () => {
 
 const ServiceDetails: React.FC = () => {
   return (
-    <div className="list-list" 
-      data-aos="slide-right"
-      data-aos-duration="500"
-   >
+    <div className="list-list" data-aos="slide-right" data-aos-duration="500">
       <div className="yellow-circle">
         <img src="images/verifieduser.svg" alt="yellow circle" />
       </div>

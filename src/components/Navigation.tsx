@@ -3,16 +3,30 @@ import { Link } from "react-router-dom";
 import "./navigation.css";
 import { navLinks } from "../constants/navLinks";
 
-const NavigationBar: React.FC = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+interface NavLink {
+  name: string;
+  route: string;
+}
 
-  const toggleMenu = () => {
+const NavigationBar: React.FC = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+
+  const toggleMenu = (): void => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  // close menu when link is clicked
-  const closeMenu = () => {
+  const closeMenu = (): void => {
     setIsMenuOpen(false);
+  };
+
+  const renderNavLinks = (): ReactNode[] => {
+    return navLinks.map((link: NavLink, index: number): ReactNode => {
+      return (
+        <Link key={index} to={link.route} onClick={closeMenu}>
+          {link.name}
+        </Link>
+      );
+    });
   };
 
   return (
@@ -22,21 +36,8 @@ const NavigationBar: React.FC = () => {
           <img src="/images/logo.svg" alt="Paydestal Logo" />
         </div>
         <div className={`nav-links-container ${isMenuOpen ? "open" : ""}`}>
-          {navLinks.map(
-            (
-              link: { name: string; route: string },
-              index: number
-            ): ReactNode => {
-              return (
-                <Link key={index} to={link.route} onClick={closeMenu}>
-                  {link.name}
-                </Link>
-              );
-            }
-          )}
-
+          {renderNavLinks()}
           <div className="line h-[1px] w-[100%] bg-[#f3f4f6] sm:hidden"></div>
-
           <div className="block md:hidden inline-flex items-start mt-2 ">
             <div className="flex rounded">
               <button className="bg-[#F4B23E] w-48 mr-6 rounded-md px-4 py-2 ">
@@ -51,7 +52,6 @@ const NavigationBar: React.FC = () => {
                   Login
                 </p>
               </button>
-
               <button className="bg-[#1B442A] w-48 rounded-md px-4 py-2 hover:bg-[#F4B23E] hover:text-[#F4B23E] transition duration-300 ease-in-out ">
                 <p
                   style={{
@@ -72,12 +72,10 @@ const NavigationBar: React.FC = () => {
         <Link to="/login" className="login-link">
           Login
         </Link>
-
         <button className="reg-button">
           <Link to="/register">Sign Up</Link>
         </button>
       </div>
-
       <div className="hamburger-menu-wrapper">
         <button className="burg-btn">
           <div className="hamburger" onClick={toggleMenu}>
